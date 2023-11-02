@@ -1,0 +1,74 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: #111827;
+}
+.app-header{
+    padding: 4rem 1rem;
+}
+.app-title{
+    text-align: center;
+    font-size: 2rem;
+    color: #dc2626;
+    margin: 0;
+}
+.app-navigation{
+    text-align: center;
+    padding-bottom: 4rem;
+}
+.app-navigation a{
+    margin: 0 0.75rem;
+    text-decoration: none;
+    color: inherit;
+
+}
+a.active{
+    font-weight: 600;
+    color: #dc2626;
+}
+.recipe-container{
+    max-width: 60rem;
+    margin:auto;
+}
+.recipe-title{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+details{
+    display: none;
+}
+.recipe-image{
+    display: block;
+    margin: 2rem auto;
+}
+.recipe-description{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.recipe-content{
+    display: flex;
+}
+.recipe-ingredients-section{
+    width: 100%;
+    max-width: 16rem;
+    
+}
+.recipe-subtitle{
+    font-size: 1.25rem;
+    color:#dc2626;
+}
+.recipe-ingredients-list{
+    line-height: 1.5;
+}
+.recipe-instructions-list{
+    line-height: 2;
+}
+aside a{
+    color: inherit;
+}
+/*
+    - Klasa `recipe-ingredients-section`: szerokość 100%, ale maksymalna szerokość 16rem
+    - Klasa `recipe-subtitle`: tekst o rozmiarze 1.25rem w kolorze `#dc2626`
+    - Klasa `recipe-ingredients-list`: interlinia 1.5
+    - Klasa `recipe-instructions-list`: interlinia 2 */

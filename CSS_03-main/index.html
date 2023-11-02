@@ -11,22 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>Pyszne Przepisy!</h1>
+    <header class="app-header">
+        <h1 class="app-title">Pyszne Przepisy!</h1>
     </header>
 
-    <nav>
+    <nav class="app-navigation">
         <a href="#">Start</a> | 
         <a href="#" class="active">Przepisy</a> |
-        <a href="#"></a>Współpraca</a> |
-        <a href="#"></a>O mnie</a>
+        <a href="#">Współpraca</a> |
+        <a href="#">O mnie</a>
     </nav>
 
     <main>
-    <article>
-       <h2>Brownie</h2>
+    <article class="recipe-container">
+       <h2 class="recipe-title">Brownie</h2>
 
        <details>
         <summary>Spis Treści</summary>
@@ -40,17 +41,17 @@
        </details>
 
        <section id="wstep">
-        <img src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=2" alt="Fotografia brownie z polewą czekoladową">
+        <img class="recipe-image" src="https://images.pexels.com/photos/45202/brownie-dessert-cake-sweet-45202.jpeg?auto=compress&cs=tinysrgb&w=420&h=250&dpr=2" alt="Fotografia brownie z polewą czekoladową">
 
 
-        <p>Zachęcamy do przygotowania naszego wyjątkowego przepisu na brownie, który zaskoczy cię intensywnym smakiem czekolady i jednocześnie delikatną, wilgotną konsystencją. To deser, który rozpływa się w ustach i zapewnia niezapomniane doznania smakowe. Odkryj, jak łatwo i szybko możesz stworzyć ten wyjątkowy smakowy rarytas i delektuj się każdym kęsem.</p>
+        <p class="recipe-description">Zachęcamy do przygotowania naszego wyjątkowego przepisu na brownie, który zaskoczy cię intensywnym smakiem czekolady i jednocześnie delikatną, wilgotną konsystencją. To deser, który rozpływa się w ustach i zapewnia niezapomniane doznania smakowe. Odkryj, jak łatwo i szybko możesz stworzyć ten wyjątkowy smakowy rarytas i delektuj się każdym kęsem.</p>
        </section>
     
-        <div>
-            <section id="skladniki">
-                <h3>Składniki</h3>
+        <div class="recipe-content">
+            <section id="skladniki" class="recipe-ingredients-section">
+                <h3 class="recipe-subtitle">Składniki</h3>
     
-                <ul>
+                <ul class="recipe-ingredients-list">
                     <li>1.5 tabliczki gorzkiej czekolady</li>
                     
                     <li>1 łyżeczka soli</li>
@@ -81,9 +82,9 @@
     
     
             <section id="instrukcje">
-                <h3>Instrukcje</h3>
+                <h3 class="recipe-subtitle">Instrukcje</h3>
     
-                <ol>
+                <ol class="recipe-instructions-list">
                     <li>W dużej misce miksuję ze sobą rozpuszczone i ostudzone masło, odrobinę oleju i dwa rodzaje cukru. Całość powinna się idealnie ze sobą połączyć.</li>
                     
                     <li>Dodaję jajka, ziarenka ze świeżej laski wanilii (przekrój ją wzdłuż i końcówką noża wyjmij ziarenka) i szczyptę soli.</li>
