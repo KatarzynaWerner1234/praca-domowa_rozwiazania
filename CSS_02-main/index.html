@@ -9,6 +9,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body, textarea, input{
+            font-family: 'Roboto', sans-serif;
+        }
+        h3{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        fieldset{
+            border: 1px solid #e5e7eb;
+            padding: 0.5rem;
+            background-color: #f9fafb;
+        }
+        legend{
+            font-weight: bold;
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+        input, textarea, select{
+            border: 1px solid #e5e7eb;
+            border-radius: 0.125rem;
+            padding: 0.5rem;
+        }
+        label{
+            color: #374151;
+        }
+        button{
+            color: #fff;
+            font-size: 1.15rem;
+            border-color: transparent;
+            border-radius: 0.125rem;
+            padding: 0.5rem 1rem;
+        }
+        button.green{
+            background-color: #16a34a;
+        }
+        button.red{
+            background-color: #ea580c;
+        }
+    </style>
 
 </head>
 
@@ -23,7 +63,7 @@
             <label for="first-name">Imię</label>
             <input id="first-name" type="text" name="firstName" placeholder="Podaj imię" required />
 
-            <label for="last-name">Naziwsko</label>
+            <label for="last-name">Nazwisko</label>
             <input id="last-name" type="text" name="lastName" placeholder="Podaj naziwsko" required />
 
             <label for="email">Email</label>
@@ -99,16 +139,16 @@
         <fieldset>
             <legend>Inne</legend>
 
-            <label for="extra-info">Twoje dodatokwe życzenia</label>
+            <label for="extra-info">Twoje dodatkowe życzenia</label>
         <textarea id="extra-info" name="extraInfo" cols="30" rows="10"
             placeholder="Prośba o miejsce parkingowe, późniejsze wymeldowanie lub dowolne Twoje życzenie">Brak dodatkowych życzeń</textarea>
         </fieldset>
 
         <br />
 
-        <button form="reservation-form">Zarezerwuj</button>
+        <button class="green" form="reservation-form">Zarezerwuj</button>
 
-        <button form="reservation-form" type="reset">Resetuj</button>
+        <button class="red" form="reservation-form" type="reset">Resetuj</button>
     </form>
 </body>
 
