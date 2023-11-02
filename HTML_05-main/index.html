@@ -8,8 +8,88 @@
 </head>
 
 <body>
+    <h1>Rezerwacja</h1>
+    <form action="" method="get" name="reservation-form">
+        <fieldset>
+            <legend>Dane osobowe</legend>
+            
+            <label for="name">Imię</label>
+            <input type="text" id="name" name="name">
+            
+            <label for="last-name">Nazwisko</label>
+            <input type="text" id="last-name" name="last-name">
 
-    <!-- Dodaj formularz rejestracji -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone-number">
+        </fieldset>
+
+        <fieldset>
+            <legend>Zakwaterowanie</legend>
+            
+            <label for="guests">Liczba gości</label>
+            <input type="text" id="guests" name="num-of-guests">
+            
+            <label for="in-date">Data zameldowania</label>
+            <input type="date" id="in-date" name="comming-date">
+
+            <label for="out-date">Data wymeldowania</label>
+            <input type="date" id="out-date" name="leaving-date">
+           
+            <label for="pakiet">Pakiet</label>
+            <select id="pakiet" name="pakiet">
+                <option value="" selected hidden>Wybierz pakiet</option>
+                <option value="1">Pakiet 1</option>
+                <option value="2">Pakiet 2</option>
+                <option value="3">Pakiet 3</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Adres zamieszkania</legend>
+
+            <label for="street">Ulica</label>
+            <input type="text" id="street" name="ulica">
+
+            <label for="city">Miasto</label>
+            <input type="text" id="city" name="miasto">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Posiłki</legend>
+
+            <label for="breakfast">Śniadanie</label>
+            <input type="checkbox" id="breakfast" name="sniadanie" value="breakfast">
+            
+            <label for="lunch">Lunch</label>
+            <input type="checkbox" id="lunch" name="lunch" value="lunch">
+            
+            <label for="dinner">Obiadokolacja</label>
+            <input type="checkbox" id="dinner" name="dinner" value="dinner">
+        </fieldset>
+
+        <fieldset>
+            <legend>Podróżuję służbowo</legend>
+
+            <label for="yes">Tak</label>
+            <input type="radio" id="yes" name="travel-yes" value="yes">
+            
+            <label for="no">Nie</label>
+            <input type="radio" id="no" name="travel-no" value="no">
+        </fieldset>
+
+        <label for="more">Twoje dodatkowe życzenia</label>    
+        <textarea id="more" name="more" rows="6" cols="20"></textarea> 
+        <button type="submit" id="submit" value="submit">Zarezerwuj</button>  
+        <button type="reset" id="reset" value="reset">Resetuj</button>  
+
+
+
+
+    </form>
    
 </body>
 </html>
