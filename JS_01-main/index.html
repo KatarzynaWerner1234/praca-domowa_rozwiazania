@@ -12,9 +12,20 @@
         const baseTechnologies =  ['JS', 'HTML'];
 
         // Dodaj zmiany ponizej
-        const heightInMeters = // skorzystaj ze zmiennej heightInCentimeters
-        const email =  // skorzystaj ze zmiennej name
-        const person = 
+        const heightInMeters = heightInCentimeters / 100;
+        const email = `${name.toLowerCase()}@alx.pl`
+        const person = {
+            email: email,
+            heightInMeters: heightInMeters,
+            isPresent: true,
+            address: {
+                street: "Jasna",
+                city: "Warszawa",
+                country: "Poland"
+            },
+            technologies: [...baseTechnologies, "CSS", ...libs, "TypeScript"]
+
+        };
 
 
         console.log(person);
