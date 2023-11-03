@@ -19,22 +19,36 @@
         let total = 0;
         let totalPrices = 0;
 
-        for (let x in products) {
-            if (isNaN(products[x].unitPrice) === false) {
-                totalPrices = totalPrices + products[x].unitPrice;
-                if (products[x].inStock === true) {
-                    total = total + (products[x].unitPrice) * products[x].quantity;
+   
+
+        for (let x of products) {
+            if (isNaN(x.unitPrice) === false) {
+                totalPrices = totalPrices + x.unitPrice;
+                if (x.inStock === true) {
+                    total = total + (x.unitPrice) * x.quantity;
                 }
             }
-        }
-        total = parseFloat(total.toFixed(2));
+        } 
+    
+
+       total = parseFloat(total.toFixed(2));
         let priceAvg = (totalPrices / products.length);
 
         const summary = {
             total,
             priceAvg
         }
-        console.log(summary);
+        console.log(summary); 
+
+
+            /* for (let x in products) {
+            if (isNaN(products[x].unitPrice) === false) {
+                totalPrices = totalPrices + products[x].unitPrice;
+                if (products[x].inStock === true) {
+                    total = total + (products[x].unitPrice) * products[x].quantity;
+                }
+            }
+        } */
 
     </script>
 </head>
