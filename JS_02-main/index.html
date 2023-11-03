@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <script> 
+    <script>
         const products = [
             { name: 'Banany', unitPrice: 2.46, quantity: 3, inStock: true, },
             { name: 'Gruszki', unitPrice: 3.99, quantity: 7, inStock: false, },
@@ -14,9 +15,36 @@
         ];
 
         // Dodaj swoje zmiany ponizej
+
+        let total = 0;
+        let totalPrices = 0;
+        let numerOfProducts = 0;
+
+        for (let x in products) {
+            if (isNaN(products[x].unitPrice) === false) {
+                totalPrices = totalPrices + products[x].unitPrice;
+                numerOfProducts = numerOfProducts + products[x].quantity
+                if (products[x].inStock === true) {
+                    total = total + (products[x].unitPrice) * products[x].quantity;
+                }
+            }
+        }
+
+        total = parseFloat(total.toFixed(2));
+        let priceAvg = (totalPrices / numerOfProducts);
+        priceAvg = parseFloat(priceAvg.toFixed(4));
+
+        const summary = {
+            total,
+            priceAvg
+        }
+        console.log(summary);
+
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
