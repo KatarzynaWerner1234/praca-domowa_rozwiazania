@@ -18,21 +18,17 @@
 
         let total = 0;
         let totalPrices = 0;
-        let numerOfProducts = 0;
 
         for (let x in products) {
             if (isNaN(products[x].unitPrice) === false) {
                 totalPrices = totalPrices + products[x].unitPrice;
-                numerOfProducts = numerOfProducts + products[x].quantity
                 if (products[x].inStock === true) {
                     total = total + (products[x].unitPrice) * products[x].quantity;
                 }
             }
         }
-
         total = parseFloat(total.toFixed(2));
-        let priceAvg = (totalPrices / numerOfProducts);
-        priceAvg = parseFloat(priceAvg.toFixed(4));
+        let priceAvg = (totalPrices / products.length);
 
         const summary = {
             total,
